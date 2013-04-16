@@ -1,0 +1,346 @@
+<!doctype html>
+<html xmlns:og="http://opengraphprotocol.org/schema/" xmlns:fb="http://www.facebook.com/2008/fbml"  itemscope itemtype="http://schema.org/Article" lang="en-US">
+
+<head>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- This is Squarespace. -->
+<!-- tartanhacks -->
+<meta charset="utf-8" />
+<title>Rules &mdash; TartanHacks</title>
+<meta property="og:site_name" content="TartanHacks"/>
+<meta property="og:title" content="Rules"/>
+<meta itemprop="name" content="Rules"/>
+<meta property="og:url" content="http://tartanhacks.com/rules"/>
+<meta itemprop="url" content="http://tartanhacks.com/rules"/>
+<meta property="og:type" content="article"/>
+<meta property="og:image" content="http://tartanhacks.com/item/50eba212e4b01806353ebb07?format=500w"/>
+<meta itemprop="image" content="http://tartanhacks.com/item/50eba212e4b01806353ebb07?format=500w"/>
+<link rel="image_src" href="http://tartanhacks.com/item/50eba212e4b01806353ebb07?format=500w" />
+<script>(function() {var l=!1,q=[1500,1000,750,500,300,100],s=new function(){this.load=function(b,n){b.getDOMNode&&(b=b.getDOMNode());
+var o=this._getDataFromNode(b,n),m=!(!o.a||!o.a.width||!o.a.height),k=o.load+"";
+if("false"===k){return l
+}var i=o.mode;
+if(m&&("fit"==i||"fill"==i)){i=b.parentNode;
+if(!i){return console.error("Not doing anything, parentNode not found."),l
+}if(!this.f(b,n,i)){return l
+}}i=this.g(b,o);
+if("string"==typeof i&&"viewport"!==k){var j=this.k(i,o);
+b.getAttribute("src")!==j&&(b.onload=function(){b.className=b.className.replace("loading"," ").trim()
+},!b.getAttribute("src")&&-1===b.className.indexOf("loading")&&(b.className+=(b.className?" ":"")+"loading"),!b.getAttribute("src")&&m?b.setAttribute("src",j):(o=new Image,o.onload=function(){m?b.setAttribute("src",j):(b.setAttribute("data-image-dimensions",this.width+"x"+this.height),s.load(b,n))
+},o.onerror=function(){b.className=b.className.replace("loading"," ").trim();
+b.setAttribute("src",j)
+},o.src=j));
+return !0
+}return i
+};
+this.f=function(G,E,F){G.getDOMNode&&(G=G.getDOMNode());
+F&&F.getDOMNode&&(F=F.getDOMNode());
+F=F||G.parentNode;
+if(!F){return console.error("Not doing anything, parentNode not found."),l
+}var D=this._getDataFromNode(G,E),C=F.offsetWidth,A=F.offsetHeight;
+E=D.mode;
+if("none"!=E){var B=D.a.width,z=D.a.height,o=B/z,b=C/A,y;
+"fill"===E?y=o>b?A/z:C/B:"fit"===E&&(y=o<b?A/z:C/B);
+!D.d&&("fit"==E&&1<y)&&(y=1);
+B=Math.floor(B*y);
+y=Math.floor(z*y);
+var i,x;
+"fill"===E?(i=Math.min(Math.max(C/2-B*D.c.x,C-B),0),x=Math.min(Math.max(A/2-y*D.c.y,A-y),0)):"fit"===E&&(x=D.e,i=x.left?0:x.right?C-B:B<C?(C-B)/2:0,x=x.top?0:x.bottom?A-y:y<A?(A-y)/2:0,"inline"==this.b(G,"display")&&(G.style.fontSize="0px"),B-=G.offsetHeight-G.clientHeight,y-=G.offsetWidth-G.clientWidth);
+if(0===B||0===y){return l
+}G.style.top=Math.floor(x)+"px";
+G.style.left=Math.floor(i)+"px";
+G.style.width=Math.floor(B)+"px";
+G.style.height=Math.floor(y)+"px";
+i=this.b(F,"position");
+G.style.position="relative"==i?"absolute":"relative";
+if("fill"==E&&(G=this.b(F,"overflow"),!G||"hidden"!=G)){F.style.overflow="hidden"
+}return !0
+}};
+this.g=function(A,y){function z(h,g){"none"===y.mode&&(A.style.width=null,A.style.height=null);
+var d=parseFloat(A.getAttribute(h)),a=parseFloat(d);
+if(!a||isNaN(a)){d=o.b(A,h),a=parseFloat(d)
+}if(!a||isNaN(a)){d=o.b(A,"max-"+h,"max"+(h.substr(0,1).toUpperCase()+h.substr(1))),a=parseFloat(d)
+}if(0===g||d){switch(o.i(d)){case"percentage":g=parseInt(d,10)/100*m.offsetWidth;
+break;
+case"number":g=parseInt(d,10)
+}}!a&&(0!==g&&!A.getAttribute("src"))&&(g=0);
+return g
+}y=y||this._getDataFromNode(A);
+if(!y.source){return l
+}var x=A.offsetWidth,p=A.offsetHeight,m=A.parentNode,o=this,k=A.getAttribute("alt"),i=k&&0<k.length&&"none"===y.mode&&!A.getAttribute("src");
+if(i){var b=A.style.display;
+A.removeAttribute("alt");
+A.style.display="none";
+A.offsetHeight+0;
+A.style.display=b
+}x=z("width",x);
+p=z("height",p);
+i&&A.setAttribute("alt",k);
+0===x&&0===p?(x=y.a.width,p=y.a.height):0===x?x=this.getDimensionForValue("width",p,y):0===p&&(p=this.getDimensionForValue("height",x,y));
+"viewport"===y.load&&(A.style.width=Math.floor(x)+"px",A.style.height=Math.floor(p)+"px");
+return this.j(x,p,y)
+};
+this._getDataFromNode=function(b,g){g=g||{};
+var h={c:{x:0.5,y:0.5},a:{width:null,height:null},mode:"none",e:{h:!0},load:"true",d:!0};
+if(g.c){h.c=g.c
+}else{var f=b.getAttribute("data-image-focal-point");
+if(f&&(f=f.split(","))&&2==f.length){h.c={x:parseFloat(f[0]),y:parseFloat(f[1])}
+}}if(g.a){h.a=g.a
+}else{if((f=b.getAttribute("data-image-dimensions"))&&(f=f.split("x"))&&2==f.length){h.a={width:parseInt(f[0],10),height:parseInt(f[1],10)}
+}}g.mode?h.mode=g.mode:(f=b.parentNode.className,-1!==f.indexOf("content-fill")?h.mode="fill":-1!==f.indexOf("content-fit")&&(h.mode="fit"));
+if("fit"===h.mode&&(f=g.e||b.getAttribute("data-alignment")||b.parentNode.getAttribute("data-alignment"))){h.e={top:-1!==f.indexOf("top"),left:-1!==f.indexOf("left"),h:-1!==f.indexOf("center"),right:-1!==f.indexOf("right"),bottom:-1!==f.indexOf("bottom")}
+}if(g.load){h.load=g.load
+}else{if(f=b.getAttribute("data-load")){h.load=f
+}}if("undefined"!==typeof g.d){h.d=g.d
+}else{if(f=b.getAttribute("data-image-stretch")){h.d="true"===f?!0:l
+}}g.source?h.source=g.source:h.source=b.getAttribute("data-image")||b.getAttribute("data-src");
+if(h.source&&(-1!==h.source.indexOf("squarespace.com")||-1!==h.source.indexOf("squarespace.net"))&&"http:"===h.source.substr(0,5)&&"https"===window.location.protocol.substr(0,5)){h.source=h.source.replace("http://","https://")
+}return h
+};
+this.i=function(b){return"string"===typeof b&&-1!==b.indexOf("%")?"percentage":isNaN(parseInt(b,10))?NaN:"number"
+};
+this.b=function(b,g,h){var f;
+b.currentStyle?f=b.currentStyle[h||g]:window.getComputedStyle&&(f=document.defaultView.getComputedStyle(b,null).getPropertyValue(g));
+return f
+};
+this.j=function(b,e,f){b=Math.max(e/(f.a.height/f.a.width),b);
+"number"==typeof window.devicePixelRatio&&(b=b*window.devicePixelRatio);
+for(e=1;
+e<q.length&&!(b>q[e]);
+e++){}return q[e-1]+"w"
+};
+this.getDimensionForValue=function(b,g,h){var f=h.a.width;
+h=h.a.height;
+return"width"==b?f/h*g:"height"==b?h/f*g:NaN
+};
+this.k=function(b,e){var f=e.source;
+return b&&("/"==f[0]||-1!=f.indexOf("squarespace.com")||-1!=f.indexOf("squarespace.net"))?(f=f+(-1!==f.indexOf("?")?"\x26":"?")+"format\x3d"+b,window.b&&window.b.l&&(f+="\x26storage\x3dlocal"),f):e.source
+}
+};
+window.ImageLoader=s;
+var t,u,v=50;
+function w(){var b=document.images,i=document.styleSheets;
+if(0>--v&&"complete"==document.readyState){clearTimeout(u),console.warn("Timed Out: No images were found on page.")
+}else{if(0<b.length&&t&&(t.rules||t.cssRules)){window.clearTimeout(u);
+for(var i=l,j=0,h=b.length;
+j<h;
+j++){var g;
+if(g=(b[j].hasAttribute?b[j].hasAttribute("data-image"):!!b[j].attributes["data-image"])||(b[j].hasAttribute?b[j].hasAttribute("data-src"):!!b[j].attributes["data-src"])){g=b[j],g="false"!==(g.getAttribute?g.getAttribute("data-load"):g.attributes["data-load"])+""
+}g&&(i=!s.load(b[j])||i)
+}i&&(u=window.setTimeout(w,50))
+}else{if(!t){b=0;
+for(j=i.length;
+b<j;
+b++){/\/site.css\?/.test(i[b].href)&&(t=i[b])
+}}u=window.setTimeout(w,50)
+}}}w();
+document.addEventListener&&document.addEventListener("DOMContentLoaded",w,l);})();</script>
+<script type="text/javascript" src="//static.squarespace.com/universal/scripts-v6/04152013212550926/yui-seed.js"></script>
+<link rel="canonical" href="http://tartanhacks.com/rules/"/>
+<link rel="shortcut icon" type="image/x-icon" href="/favicon.ico"/>
+<link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Bitter:400|Bree+Serif:normal,400|Open+Sans:normal|PT+Sans+Caption:400|PT+Sans:400italic,400"/>
+
+<script> Static.SQUARESPACE_CONTEXT = {"appDomain":"squarespace.com","collection":{"id":"50eb5c93e4b0a5b2685d28c9","enabled":true,"starred":false,"type":10,"ordering":3,"title":"Rules","navigationTitle":"Rules","urlId":"rules","itemCount":0,"updatedOn":1357601941323,"folder":false,"dropdown":false,"tags":[],"categories":[],"homepage":false,"typeName":"page","synchronizing":false,"typeLabel":"page","fullUrl":"/rules/"},"connectedAccounts":[{"serviceId":13,"addedOn":1357613852292,"profileUrl":"https://us4.api.mailchimp.com","serviceName":"mailchimp"},{"serviceId":4,"userId":"412782256","userName":"ScottyLabs","screenname":"ScottyLabs","addedOn":1357613715548,"profileUrl":"https://twitter.com/ScottyLabs","iconUrl":"http://a0.twimg.com/profile_images/1793758111/SL-Fin3_normal.png","collectionId":"50eb8a93e4b050fcaaba4eff","serviceName":"twitter"},{"serviceId":4,"userId":"438509981","userName":"TartanHacks","screenname":"Tartan Hacks","addedOn":1357673203432,"profileUrl":"https://twitter.com/TartanHacks","iconUrl":"http://a0.twimg.com/profile_images/1770206537/tartan_normal.png","collectionId":"50ec72f3e4b075c993985037","serviceName":"twitter"},{"serviceId":22,"userId":"102918700340175473145","screenname":"Quintin Carlson","addedOn":1358379796732,"profileUrl":"https://plus.google.com/102918700340175473145","iconUrl":"https://lh5.googleusercontent.com/-kU4OBzw_7k0/AAAAAAAAAAI/AAAAAAAAACQ/tZ5U3aBqHG0/photo.jpg","serviceName":"googledocs2"},{"serviceId":22,"userId":"102918700340175473145","screenname":"Quintin Carlson","addedOn":1359083319018,"profileUrl":"https://plus.google.com/102918700340175473145","iconUrl":"https://lh5.googleusercontent.com/-kU4OBzw_7k0/AAAAAAAAAAI/AAAAAAAAACQ/tZ5U3aBqHG0/photo.jpg","serviceName":"googledocs2"},{"serviceId":22,"userId":"102918700340175473145","screenname":"Quintin Carlson","addedOn":1359157525187,"profileUrl":"https://plus.google.com/102918700340175473145","iconUrl":"https://lh5.googleusercontent.com/-kU4OBzw_7k0/AAAAAAAAAAI/AAAAAAAAACQ/tZ5U3aBqHG0/photo.jpg","serviceName":"googledocs2"}],"secureDomain":"https://tartanhacks.squarespace.com","subscribed":false,"templateCapabilities":{"custom":false,"customTypes":[],"layouts":{"default":{"name":"Full-Width","regions":["header","fullwidth","footer"]},"sidebar":{"name":"Sidebar","regions":["header","site","footer"]}},"pageSchemas":{"folder":{},"gallery":{"ordering":1},"events":{"ordering":4},"blog":{"ordering":2}},"templatePageConfigs":{"read-me":{}},"widgetSchemas":{"1":[{"type":"navigation","schemaName":"navigation"}],"2":[],"3":[{"type":"logo","schemaName":"logo"}],"4":[],"5":[],"6":[],"9":[],"12":[],"44":[],"50":[],"16":[],"18":[],"21":[],"23":[],"22":[],"25":[],"24":[],"26":[]}},"templateTweakable":true,"tweakJSON":{"bannerImageHeight":"435px","gallery-arrow-style":"Round Corners","gallery-aspect-ratio":"3:2 Standard","gallery-auto-crop":"true","gallery-autoplay":"false","gallery-info-overlay":"Always Show","gallery-loop":"false","gallery-navigation":"Thumbnails","gallery-show-arrows":"true","gallery-transitions":"Fade","galleryArrowBackground":"#222","galleryArrowColor":"#fff","galleryAutoplaySpeed":"3","galleryCircleColor":"#fff","galleryInfoBackground":"rgba(0, 0, 0, .7)","galleryThumbnailSize":"100px","product-gallery-auto-crop":"true","product-image-auto-crop":"true"},"website":{"id":"4f3d3c4e2933f97e8f61d857","identifier":"tartanhacks","contentModifiedOn":1365798518197,"siteStatus":{},"language":"en-US","timeZone":"America/New_York","machineTimeZoneOffset":-14400000,"timeZoneOffset":-14400000,"timeZoneAbbr":"EDT","siteTitle":"TartanHacks","siteTagLine":"January 25-26th, 2013","siteDescription":"","location":{"addressTitle":"","addressLine1":"","addressLine2":"","addressCountry":""},"logoImageId":"50eba212e4b01806353ebb07","shareButtonOptions":{"1":true,"2":true},"logoImageUrl":"/item/50eba212e4b01806353ebb07","authenticUrl":"http://tartanhacks.com","baseUrl":"http://tartanhacks.com","primaryDomain":"tartanhacks.com","socialAccounts":[{"serviceId":4,"userId":"412782256","userName":"ScottyLabs","screenname":"ScottyLabs","addedOn":1357613715548,"profileUrl":"https://twitter.com/ScottyLabs","iconUrl":"http://a0.twimg.com/profile_images/1793758111/SL-Fin3_normal.png","collectionId":"50eb8a93e4b050fcaaba4eff","serviceName":"twitter"},{"serviceId":4,"userId":"438509981","userName":"TartanHacks","screenname":"Tartan Hacks","addedOn":1357673203432,"profileUrl":"https://twitter.com/TartanHacks","iconUrl":"http://a0.twimg.com/profile_images/1770206537/tartan_normal.png","collectionId":"50ec72f3e4b075c993985037","serviceName":"twitter"}],"statsMigrated":false},"websiteCloneable":false,"websiteSettings":{"id":"4f3d3c4e2933f97e8f61d858","websiteId":"4f3d3c4e2933f97e8f61d857","country":"","state":"","markdownMode":true,"simpleLikingEnabled":true,"defaultPostFormat":"%t","commentLikesAllowed":true,"commentAnonAllowed":true,"commentThreaded":true,"commentApprovalRequired":true,"commentAvatarsOn":true,"commentSortType":2,"commentFlagThreshold":0,"commentFlagsAllowed":true,"commentEnableByDefault":true,"commentDisableAfterDaysDefault":0,"disqusShortname":"","homepageTitleFormat":"%s","collectionTitleFormat":"%c \u2014 %s","itemTitleFormat":"%i \u2014 %s","commentsEnabled":true,"allowSquarespacePromotion":true,"storeSettings":{"storeTitle":"Unicorn","returnPolicy":null,"termsOfService":null,"privacyPolicy":null,"fromEmail":"no-reply@mysite.com","useLightCart":false,"measurementStandard":1,"isLive":true,"storeState":3,"customerSupportEmail":"no-reply@mysite.com","stripeConnected":false},"useEscapeKeyToLogin":true}}; SquarespaceFonts.loadViaContext(); Squarespace.load(); </script>
+
+<script type="text/javascript"> var _gaq = _gaq || []; _gaq.push(['_setAccount', 'UA-32587689-1']); _gaq.push(['_trackPageview']); (function() { var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true; ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js'; var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s); })(); </script><!--[if gte IE 9]> <!-- --><link rel="stylesheet" type="text/css" href="/site.css?tid=500589fc84aed5ec11c2b672&r=295&t=1358918407878"/><!-- <![endif]-->
+<!--[if lt IE 9]><script src="//static.squarespace.com/universal/scripts-thirdparty/html5/html5-shiv.js"></script><link rel="stylesheet" type="text/css" href="/site.css?tid=500589fc84aed5ec11c2b672&r=295&t=1358918407878&noMedia=true"/><![endif]-->
+
+  <script src="//template-addons.squarespace.com/scripts/shrink.js"></script>
+  <script type="text/javascript" src="/scripts/site.js?r=295"></script>
+</head>
+
+<body class="collection-type-page view-list mobile-style-available collection-50eb5c93e4b0a5b2685d28c9 collection-layout-default navigation-position-fixed sidebar-position-right   social-icon-style-normal  gallery-navigation-thumbnails gallery-info-overlay-always-show gallery-aspect-ratio-32-standard gallery-arrow-style-round-corners gallery-transitions-fade gallery-show-arrows gallery-auto-crop     event-thumbnails event-thumbnail-size-32-standard event-date-label event-date-label-time event-excerpts event-list-date event-list-time event-list-address event-icalgcal-links    product-list-titles-under product-list-alignment-center product-item-size-11-square product-image-auto-crop product-gallery-size-11-square product-gallery-auto-crop show-product-price show-product-item-nav native-currency-code-usd logo-image" id="collection-50eb5c93e4b0a5b2685d28c9" ontouchstart="">
+
+  <div id="mobileNav"><div class="wrapper">
+    <div id="topNav">
+<nav class="main-nav mobile-nav"><ul>
+  
+        
+          <li class="page-collection">
+
+                          <a href="/">Home</a>
+            
+            
+          </li>
+
+        
+      
+
+  
+        
+          <li class="page-collection">
+
+                          <a href="/sponsors/">Sponsors</a>
+            
+            
+          </li>
+
+        
+      
+
+  
+        
+          <li class="page-collection">
+
+                          <a href="/about/">About</a>
+            
+            
+          </li>
+
+        
+      
+
+  
+        
+          <li class="page-collection">
+
+                          <a href="/prizes/">Prizes</a>
+            
+            
+          </li>
+
+        
+      
+
+  
+        
+          <li class="page-collection">
+
+                          <a href="/reinbursement/">Reimbursement</a>
+            
+            
+          </li>
+
+        
+      
+
+  
+        
+          <li class="page-collection">
+
+                          <a href="/contact/">Contact</a>
+            
+            
+          </li>
+
+        
+      
+
+  </ul>
+</nav>
+</div>
+
+  </div></div>
+
+            <div id="bannerImage" class="default-background"></div>
+      
+  <header id="header">
+
+    <div id="topNav">
+  <nav class="main-nav dropdown-hover desktop-nav"><ul>
+    
+      <li class="page-collection" id="50eb592de4b04b8b89327ad2">
+
+        
+                      <a href="/">Home</a>
+          
+          
+
+        
+      </li>
+
+    
+      <li class="page-collection" id="50f3192be4b0ceb75bcc148f">
+
+        
+                      <a href="/sponsors/">Sponsors</a>
+          
+          
+
+        
+      </li>
+
+    
+      <li class="page-collection" id="50eb5bbbe4b0a5b2685d272f">
+
+        
+                      <a href="/about/">About</a>
+          
+          
+
+        
+      </li>
+
+    
+      <li class="page-collection" id="5102a797e4b0ef23f0dc91eb">
+
+        
+                      <a href="/prizes/">Prizes</a>
+          
+          
+
+        
+      </li>
+
+    
+      <li class="page-collection" id="50f0bbb8e4b07e77c463f788">
+
+        
+                      <a href="/reinbursement/">Reimbursement</a>
+          
+          
+
+        
+      </li>
+
+    
+      <li class="page-collection" id="50eb5d16e4b0a5b2685d29d0">
+
+        
+                      <a href="/contact/">Contact</a>
+          
+          
+
+        
+      </li>
+
+    
+    <li id="mobileMenuLink"><a>Menu</a></li>
+  </ul>
+  </nav>
+  
+</div>
+
+
+    <div id="logo" data-content-field="site-title">
+      <div class="wrapper">
+                <h1 class="logo"><a href="/"><img src="/item/50eba212e4b01806353ebb07?format=original" alt="TartanHacks" /></a></h1>
+        <div class="logo-subtitle">January 25-26th, 2013</div>              </div>
+    </div>
+
+  </header>
+
+  <div id="canvas"><div id="wrapper">
+  <section id="page" role="main">
+          <header class="page-title"><h1>Rules</h1></header>
+      <div class="page-description"></div>
+        <div class="sqs-layout sqs-grid-12 columns-12" data-type="page" data-updated-on="1365798010857" id="page-50eb5c93e4b0a5b2685d28c9"><div class="row sqs-row"><div class="col sqs-col-12 span-12"><div class="sqs-block html-block" data-block-json="&#123;&quot;wysiwyg&quot;:&#123;&quot;engine&quot;:&quot;code&quot;,&quot;mode&quot;:&quot;htmlmixed&quot;,&quot;isSource&quot;:false,&quot;source&quot;:&quot;&quot;&#125;,&quot;html&quot;:&quot;&lt;h1&gt;Rules for Competing in TartanHacks 2013&lt;/h1&gt;&lt;h2&gt;Eligibility and Registration&lt;/h2&gt;&lt;h3&gt;Eligibility&lt;/h3&gt;&lt;p&gt;To compete in TartanHacks, you must be an undergraduate student. If you have completed your undergraduate degree requirements and have begun a post-bachelors program you may participate in TartanHacks, but you will not be eligible to win prizes. If you are concerned about your eligibility to participate or win prizes, please contact us at&amp;nbsp;&lt;a href=\&quot;mailto:tartanhacks@tartanhacks.com\&quot; onclick=\&quot;window.open('https://mail.google.com/mail/?view=cm&amp;amp;tf=1&amp;amp;to=tartanhacks@tartanhacks.com&amp;amp;cc=&amp;amp;bcc=&amp;amp;su=&amp;amp;body=','_blank');return false;\&quot;&gt;tartanhacks@tartanhacks.com&lt;/a&gt;&amp;nbsp;ahead of time to double check.&lt;/p&gt;&lt;p&gt;Your participation in TartanHacks is entirely up to the discretion of the TartanHacks Organizers and ScottyLabs as a whole.&lt;/p&gt;&lt;h3&gt;Registration&lt;/h3&gt;&lt;p&gt;TartanHacks registration occurs in multiple stages. Registration is done on an&amp;nbsp;&lt;em&gt;individual&amp;nbsp;&lt;/em&gt;basis (not in teams). Team membership will be recorded at the end of the hackathon, prior to demos. However, we strongly recommend that you find your team before hacking begins. If you are having trouble finding a team, you should attend our \u201CFree Agent\u201D mixer, which occurs on the night before the TartanHacks kickoff. You must be registered to be eligible to demo or win prizes.&lt;/p&gt;&lt;p&gt;&lt;em&gt;Pre-Registration&lt;/em&gt;&amp;nbsp;starts&amp;nbsp;&lt;strong&gt;January 14th @ 7:00pm&lt;/strong&gt;: Carnegie Mellon students in their first year (Freshman) or those who are part of the Women@SCS or Women in ECE organizations will be able to register. Only a limited number of these slots are available, and will be released on a first come, first served basis. Those with the Pre-Registration status (Women and Freshman) who are not able to register during Pre-Registration will be able to register during Open Registration.&lt;/p&gt;&lt;p&gt;&lt;em&gt;Open Registration&lt;/em&gt;&amp;nbsp;starts&amp;nbsp;&lt;strong&gt;January 16th @ 7:00pm&lt;/strong&gt;: Carnegie Mellon undergraduate students will be able to register during this timeframe. Again, tickets will be released on a first come, first served basis. Once these tickets run out, CMU students will be placed on a waitlist.&amp;nbsp;&lt;em&gt;See the Waitlist section for more information about the waitlist.&lt;/em&gt;&lt;/p&gt;&lt;p&gt;&lt;em&gt;External Registration&lt;/em&gt;&amp;nbsp;starts&amp;nbsp;&lt;strong&gt;January 17th @ 7:00pm&lt;/strong&gt;: Non-Carnegie Mellon students will be able to register for a limited number of open slots on this day. We will be reimbursing costs for those traveling to TartanHacks from a select set of schools. (See the &lt;a href=\&quot;/reinbursement\&quot;&gt;Reimbursement page&lt;/a&gt; for more information.) Only students from those schools will be able to register. The list of schools from which we will be providing transportation will be posted on the TartanHacks Website along with other Registration information.&lt;/p&gt;&lt;p&gt;&lt;em&gt;Graduate&amp;nbsp;&lt;strong&gt;For Fun&lt;/strong&gt;&amp;nbsp;Registration&lt;/em&gt;&amp;nbsp;starts&amp;nbsp;&lt;strong&gt;January 17th @ 7:30pm&lt;/strong&gt;: A limited number of&amp;nbsp;&lt;strong&gt;teams&lt;/strong&gt;&amp;nbsp;of Carnegie Mellon graduate students will be able to register starting on January 17th at 7:30pm. Teams of graduate students can participate in TartanHacks and demo their hacks, but they are&amp;nbsp;&lt;strong&gt;not eligible to win prizes.&lt;/strong&gt;&lt;/p&gt;&lt;h3&gt;MANDATORY Confirmation&lt;/h3&gt;&lt;p&gt;As in previous years, registration for TartanHacks will take place a little more than a week before TartanHacks. To ensure as many people can participate as possible, we require you to confirm your attendance prior to the event. On&amp;nbsp;&lt;strong&gt;Wednesday, January 23rd, 2013&lt;/strong&gt;&amp;nbsp;you will receive an email with a link to confirm your attendance. If you are still able to compete and plan on attending just click the link. If you are unable to compete, just reply saying so (and you'll make someone on the waitlist happy!).&lt;/p&gt;&lt;p&gt;Your ticket to TartanHacks is not reserved until you confirm.&lt;/p&gt;&lt;p&gt;You will have 24 hours to confirm your attendance, otherwise your spot may be given away.&lt;/p&gt;&lt;p&gt;&lt;/p&gt;&lt;h3&gt;Ticketing&lt;/h3&gt;&lt;p&gt;In your confirmation e-mail you'll see a link that allows you to retrieve your ticket. This link is unique to you. Please either print out your ticket, or bring it on your smartphone to be scanned at check-in.&lt;/p&gt;&lt;p&gt;&lt;/p&gt;&lt;h3&gt;Check-In&lt;/h3&gt;&lt;p&gt;Check-In begins on Friday, January 25th at 5:45PM EST.&amp;nbsp;It occurs on the Gates-Hillman Center Fourth Floor near the Rashid Auditorium. From there you can find a hackzone on the 4th, 5th and 6th floors of the Gates-Hilman Center.&lt;/p&gt;&lt;p&gt;Check-In is&amp;nbsp;&lt;em&gt;mandatory&lt;/em&gt;. Those who do not check in will not be eligible to win prizes.&lt;/p&gt;&lt;p&gt;&lt;/p&gt;&lt;h3&gt;Waitlist Policy&lt;/h3&gt;&lt;p&gt;We expect to run out of slots available to students. However, if you are placed on the waitlist, you still have a chance of competing! On Thursday and Friday (January 24th and 25th) we will begin clearing the waitlist. As we clear the waitlist, we will send out emails inviting you to attend TartanHacks and asking you to confirm your attendance.&lt;/p&gt;&lt;p&gt;During Check-In, if there are extra tickets, people on the waitlist may claim those tickets. See the Check-In section for more details.&lt;/p&gt;&lt;p&gt;If you are a student from an external school, and you get off of the external student waitlist, you can take advantage of the reimbursement system in place.&amp;nbsp;&lt;/p&gt;&lt;p&gt;&lt;/p&gt;&lt;h2&gt;Teams&lt;/h2&gt;&lt;p&gt;Teams can be made of up to 4 people. Hacks created by more than four people will not be allowed to be demoed, and will not be eligible to win prizes . We strongly recommend that individuals form teams prior to the beginning of the hackathon. You are only allowed to be part of one team. If you are having trouble finding a team, you should attend our \u201CFree Agent\u201D mixer, which occurs on the night before the TartanHacks kickoff. If you do not have a team when TartanHacks begins, you can look for teams that have space for extra members or speak to the organizers about matching you with a team.&lt;/p&gt;&lt;h3&gt;Team Assistance&lt;/h3&gt;&lt;p&gt;If a member of your team is unable to register (i.e., on the waitlist or missed the registration period), you must contact the Team Assistance E-mail Address (&lt;a href=\&quot;mailto:teamassistance@tartanhacks.com\&quot; onclick=\&quot;window.open('https://mail.google.com/mail/?view=cm&amp;amp;tf=1&amp;amp;to=teamassistance@tartanhacks.com&amp;amp;cc=&amp;amp;bcc=&amp;amp;su=&amp;amp;body=','_blank');return false;\&quot;&gt;teamassistance@tartanhacks.com&lt;/a&gt;) to explain your situation.&lt;/p&gt;&lt;p&gt;At the discretion of the TartanHacks Organizers, non-registered team members will be allowed the register after registration has closed.&lt;/p&gt;&lt;h2&gt;TartanHacks Event&lt;/h2&gt;&lt;p&gt;TartanHacks 2013 will be on January 25th at 5:45PM EST. It will end on Saturday, January 26th at 6:00PM EST.&lt;/p&gt;&lt;h3&gt;What we will provide:&lt;/h3&gt;&lt;ul&gt;&lt;li&gt;Food, beverages and snacks&lt;/li&gt;&lt;li&gt;Power Strips&lt;/li&gt;&lt;li&gt;Wifi&lt;/li&gt;&lt;li&gt;Testing devices (iPhones, Android devices, etc)&lt;/li&gt;&lt;/ul&gt;&lt;h3&gt;What you need to bring:&lt;/h3&gt;&lt;ul&gt;&lt;li&gt;Computers&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;h2&gt;Your Work&lt;/h2&gt;&lt;p&gt;In the spirit of the hackathon, work should be completed in the designated hacking zones throughout the Gates-Hillman Center at Carnegie Mellon University. If you need to hack elsewhere,&amp;nbsp;&lt;em&gt;let one of the organizers know&lt;/em&gt;.&lt;/p&gt;&lt;p&gt;External resources, like online how-to guides, reference books and feedback from individuals are allowed. However, all documents, code, graphics and submission materials must be created by you and your team members&lt;/p&gt;&lt;p&gt;3rd Party materials, like graphics and images may be used in your product and presentation if they fall under public domain, creative commons, licensed properly, or fair use policies.&lt;/p&gt;&lt;p&gt;Third party libraries are permitted if they are stated in the judging submission document as used, unless otherwise freely and publicly available to all teams.&lt;/p&gt;&lt;p&gt;If you have questions regarding 3rd party help or libraries, please contact a TartanHacks Organizer by emailing&amp;nbsp;&lt;a href=\&quot;mailto:tartanhacks@tartanhacks.com\&quot; onclick=\&quot;window.open('https://mail.google.com/mail/?view=cm&amp;amp;tf=1&amp;amp;to=tartanhacks@tartanhacks.com&amp;amp;cc=&amp;amp;bcc=&amp;amp;su=&amp;amp;body=','_blank');return false;\&quot;&gt;tartanhacks@tartanhacks.com&lt;/a&gt;&amp;nbsp;or in person during the event.&lt;/p&gt;&lt;h2&gt;Submission Guidelines and Presenting Your Hack&lt;/h2&gt;&lt;p&gt;&lt;strong&gt;All hacks must be able to be presented off a provided computer, unless otherwise approved by a TartanHacks Organizer.&lt;/strong&gt;&amp;nbsp;If you cannot present using a provided computer, you will be need to notify the organizers and provide a reason why during the submission process. TartanHacks will provide resources for you to learn to deploy your work to a (free) web hosting service. There is&amp;nbsp;&lt;strong&gt;no&lt;/strong&gt;&amp;nbsp;guarantee that you will be able to present using your own system.&lt;/p&gt;&lt;p&gt;If you develop a mobile application, you are required to have a mobile device or emulator on which to present your hack. We will be providing dongles to connect (certain, late-model) iOS Devices to the projection system. Otherwise you are free to use the Document Camera / your own computer.&lt;/p&gt;&lt;p&gt;Your team is only allowed to submit one hack during the hacking timeframe. This is so you can concentrate on making the best app possible!&lt;/p&gt;&lt;p&gt;Hardware-focused hacks are not allowed without the express permission of a TartanHacks Organizer. If you are concerned about including a hardware component in your hack, contact&amp;nbsp;&lt;a href=\&quot;mailto:tartanhacks@tartanhacks.com\&quot; onclick=\&quot;window.open('https://mail.google.com/mail/?view=cm&amp;amp;tf=1&amp;amp;to=tartanhacks@tartanhacks.com&amp;amp;cc=&amp;amp;bcc=&amp;amp;su=&amp;amp;body=','_blank');return false;\&quot;&gt;tartanhacks@tartanhacks.com&lt;/a&gt;. If you want to participate in a hardware hackathon, we recommend that you look into Carnegie Mellon\u2019s annual \u201CBuild18\u201D hardware hackathon.&lt;/p&gt;&lt;p&gt;You must complete a submission to the Audition submission system, available through TartanHacks' OnStage platform&amp;nbsp;&lt;strong&gt;before&lt;/strong&gt;&amp;nbsp;6:00:00PM EST on Saturday, January 26th, 2013.&lt;/p&gt;&lt;p&gt;Hacks submitted late will not be eligible for prizes.&lt;/p&gt;&lt;h3&gt;Demo Timing&lt;/h3&gt;&lt;p&gt;You are required to present a demo of your hack to be eligible for judging. The time limit for each demo is 90 seconds. (However, the TartanHacks Organizers have the right to decrease total time provided to all teams if necessary to make sure demos don\u2019t last all night.)&lt;/p&gt;&lt;h2&gt;Judging and Awards&lt;/h2&gt;&lt;p&gt;There are three types of Judges that will be evaluating your hack based on your demo:&lt;/p&gt;&lt;ul&gt;&lt;li&gt;The TartanHacks 2013 Judging Panel&lt;/li&gt;&lt;li&gt;Sponsor Judges&lt;/li&gt;&lt;li&gt;The TartanHacks 2013 Organizers&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;The TartanHacks 2013 Judging Panel will determine the First, Second, and Third place winners. This will be based off the goal, function of your submission, ease of use, novelty and user experience of your submission.&lt;/p&gt;&lt;p&gt;Sponsor judges will award one team a prize of their choosing based off a category of their choosing.&lt;/p&gt;&lt;p&gt;TartanHacks 2012 Organizers will also award one prize, the First Penguin Award. The First Penguin Award is awarded to the team with the most \u201Cdaring\u201D hack, even if the hack was not entirely successful. Google \u201Cfirst penguin award randy pausch\u201D to find out more.&lt;/p&gt;&lt;p&gt;You are only allowed to win one prize. &lt;/p&gt;&lt;h3&gt;Mixed Teams / Graduate Teams&lt;/h3&gt;&lt;p&gt;&lt;/p&gt;&lt;p&gt;Teams with Graduate students in them would only be eligible for the Best Grad Hack award, which is prize-less.&amp;nbsp;&lt;/p&gt;&lt;h2&gt;Disqualification&lt;/h2&gt;&lt;p&gt;If you are caught cheating, attempting to interfere with another team's hack in any way that is not constructive, or is malicious in any way, or begin acting against the spirit of the hackathon you &lt;strong&gt;will&lt;/strong&gt; be disqualified from the event, and may not be able to participate in future ScottyLabs events.&amp;nbsp;&lt;/p&gt;&lt;p&gt;&lt;/p&gt;&lt;h2&gt;Final Calls&lt;/h2&gt;&lt;p&gt;Should you or your team be caught cheating, acting in a way that is contrary to the spirit of TartanHacks, or violating the Carnegie Mellon University Code of Conduct, you will be disqualified from the event and your submission will not be scored or considered for prizes.&lt;/p&gt;&lt;p&gt;The TartanHacks 2013 Organizers have final say when it comes to use of 3rd party assistance, location of hacking, submission timing, disqualification, and all other issues or questionable situations that may arise.&lt;/p&gt;&lt;h2&gt;Contact&lt;/h2&gt;&lt;p&gt;Please feel free to contact the TartanHacks Organizers at&amp;nbsp;&lt;a href=\&quot;mailto:tartanhacks@tartanhacks.com\&quot; onclick=\&quot;window.open('https://mail.google.com/mail/?view=cm&amp;amp;tf=1&amp;amp;to=tartanhacks@tartanhacks.com&amp;amp;cc=&amp;amp;bcc=&amp;amp;su=&amp;amp;body=','_blank');return false;\&quot;&gt;tartanhacks@tartanhacks.com&lt;/a&gt;.&lt;/p&gt;&lt;p&gt;&lt;/p&gt;&quot;,&quot;engine&quot;:&quot;visual&quot;&#125;" data-block-type="2" id="block-8002d3162b4c1e0bd021"><div class="sqs-block-content"><h1>Rules for Competing in TartanHacks 2013</h1><h2>Eligibility and Registration</h2><h3>Eligibility</h3><p>To compete in TartanHacks, you must be an undergraduate student. If you have completed your undergraduate degree requirements and have begun a post-bachelors program you may participate in TartanHacks, but you will not be eligible to win prizes. If you are concerned about your eligibility to participate or win prizes, please contact us at&nbsp;<a href="mailto:tartanhacks@tartanhacks.com" onclick="window.open('https://mail.google.com/mail/?view=cm&amp;tf=1&amp;to=tartanhacks@tartanhacks.com&amp;cc=&amp;bcc=&amp;su=&amp;body=','_blank');return false;">tartanhacks@tartanhacks.com</a>&nbsp;ahead of time to double check.</p><p>Your participation in TartanHacks is entirely up to the discretion of the TartanHacks Organizers and ScottyLabs as a whole.</p><h3>Registration</h3><p>TartanHacks registration occurs in multiple stages. Registration is done on an&nbsp;<em>individual&nbsp;</em>basis (not in teams). Team membership will be recorded at the end of the hackathon, prior to demos. However, we strongly recommend that you find your team before hacking begins. If you are having trouble finding a team, you should attend our “Free Agent” mixer, which occurs on the night before the TartanHacks kickoff. You must be registered to be eligible to demo or win prizes.</p><p><em>Pre-Registration</em>&nbsp;starts&nbsp;<strong>January 14th @ 7:00pm</strong>: Carnegie Mellon students in their first year (Freshman) or those who are part of the Women@SCS or Women in ECE organizations will be able to register. Only a limited number of these slots are available, and will be released on a first come, first served basis. Those with the Pre-Registration status (Women and Freshman) who are not able to register during Pre-Registration will be able to register during Open Registration.</p><p><em>Open Registration</em>&nbsp;starts&nbsp;<strong>January 16th @ 7:00pm</strong>: Carnegie Mellon undergraduate students will be able to register during this timeframe. Again, tickets will be released on a first come, first served basis. Once these tickets run out, CMU students will be placed on a waitlist.&nbsp;<em>See the Waitlist section for more information about the waitlist.</em></p><p><em>External Registration</em>&nbsp;starts&nbsp;<strong>January 17th @ 7:00pm</strong>: Non-Carnegie Mellon students will be able to register for a limited number of open slots on this day. We will be reimbursing costs for those traveling to TartanHacks from a select set of schools. (See the <a href="/reinbursement">Reimbursement page</a> for more information.) Only students from those schools will be able to register. The list of schools from which we will be providing transportation will be posted on the TartanHacks Website along with other Registration information.</p><p><em>Graduate&nbsp;<strong>For Fun</strong>&nbsp;Registration</em>&nbsp;starts&nbsp;<strong>January 17th @ 7:30pm</strong>: A limited number of&nbsp;<strong>teams</strong>&nbsp;of Carnegie Mellon graduate students will be able to register starting on January 17th at 7:30pm. Teams of graduate students can participate in TartanHacks and demo their hacks, but they are&nbsp;<strong>not eligible to win prizes.</strong></p><h3>MANDATORY Confirmation</h3><p>As in previous years, registration for TartanHacks will take place a little more than a week before TartanHacks. To ensure as many people can participate as possible, we require you to confirm your attendance prior to the event. On&nbsp;<strong>Wednesday, January 23rd, 2013</strong>&nbsp;you will receive an email with a link to confirm your attendance. If you are still able to compete and plan on attending just click the link. If you are unable to compete, just reply saying so (and you'll make someone on the waitlist happy!).</p><p>Your ticket to TartanHacks is not reserved until you confirm.</p><p>You will have 24 hours to confirm your attendance, otherwise your spot may be given away.</p><p></p><h3>Ticketing</h3><p>In your confirmation e-mail you'll see a link that allows you to retrieve your ticket. This link is unique to you. Please either print out your ticket, or bring it on your smartphone to be scanned at check-in.</p><p></p><h3>Check-In</h3><p>Check-In begins on Friday, January 25th at 5:45PM EST.&nbsp;It occurs on the Gates-Hillman Center Fourth Floor near the Rashid Auditorium. From there you can find a hackzone on the 4th, 5th and 6th floors of the Gates-Hilman Center.</p><p>Check-In is&nbsp;<em>mandatory</em>. Those who do not check in will not be eligible to win prizes.</p><p></p><h3>Waitlist Policy</h3><p>We expect to run out of slots available to students. However, if you are placed on the waitlist, you still have a chance of competing! On Thursday and Friday (January 24th and 25th) we will begin clearing the waitlist. As we clear the waitlist, we will send out emails inviting you to attend TartanHacks and asking you to confirm your attendance.</p><p>During Check-In, if there are extra tickets, people on the waitlist may claim those tickets. See the Check-In section for more details.</p><p>If you are a student from an external school, and you get off of the external student waitlist, you can take advantage of the reimbursement system in place.&nbsp;</p><p></p><h2>Teams</h2><p>Teams can be made of up to 4 people. Hacks created by more than four people will not be allowed to be demoed, and will not be eligible to win prizes . We strongly recommend that individuals form teams prior to the beginning of the hackathon. You are only allowed to be part of one team. If you are having trouble finding a team, you should attend our “Free Agent” mixer, which occurs on the night before the TartanHacks kickoff. If you do not have a team when TartanHacks begins, you can look for teams that have space for extra members or speak to the organizers about matching you with a team.</p><h3>Team Assistance</h3><p>If a member of your team is unable to register (i.e., on the waitlist or missed the registration period), you must contact the Team Assistance E-mail Address (<a href="mailto:teamassistance@tartanhacks.com" onclick="window.open('https://mail.google.com/mail/?view=cm&amp;tf=1&amp;to=teamassistance@tartanhacks.com&amp;cc=&amp;bcc=&amp;su=&amp;body=','_blank');return false;">teamassistance@tartanhacks.com</a>) to explain your situation.</p><p>At the discretion of the TartanHacks Organizers, non-registered team members will be allowed the register after registration has closed.</p><h2>TartanHacks Event</h2><p>TartanHacks 2013 will be on January 25th at 5:45PM EST. It will end on Saturday, January 26th at 6:00PM EST.</p><h3>What we will provide:</h3><ul><li>Food, beverages and snacks</li><li>Power Strips</li><li>Wifi</li><li>Testing devices (iPhones, Android devices, etc)</li></ul><h3>What you need to bring:</h3><ul><li>Computers</li></ul><p><br></p><h2>Your Work</h2><p>In the spirit of the hackathon, work should be completed in the designated hacking zones throughout the Gates-Hillman Center at Carnegie Mellon University. If you need to hack elsewhere,&nbsp;<em>let one of the organizers know</em>.</p><p>External resources, like online how-to guides, reference books and feedback from individuals are allowed. However, all documents, code, graphics and submission materials must be created by you and your team members</p><p>3rd Party materials, like graphics and images may be used in your product and presentation if they fall under public domain, creative commons, licensed properly, or fair use policies.</p><p>Third party libraries are permitted if they are stated in the judging submission document as used, unless otherwise freely and publicly available to all teams.</p><p>If you have questions regarding 3rd party help or libraries, please contact a TartanHacks Organizer by emailing&nbsp;<a href="mailto:tartanhacks@tartanhacks.com" onclick="window.open('https://mail.google.com/mail/?view=cm&amp;tf=1&amp;to=tartanhacks@tartanhacks.com&amp;cc=&amp;bcc=&amp;su=&amp;body=','_blank');return false;">tartanhacks@tartanhacks.com</a>&nbsp;or in person during the event.</p><h2>Submission Guidelines and Presenting Your Hack</h2><p><strong>All hacks must be able to be presented off a provided computer, unless otherwise approved by a TartanHacks Organizer.</strong>&nbsp;If you cannot present using a provided computer, you will be need to notify the organizers and provide a reason why during the submission process. TartanHacks will provide resources for you to learn to deploy your work to a (free) web hosting service. There is&nbsp;<strong>no</strong>&nbsp;guarantee that you will be able to present using your own system.</p><p>If you develop a mobile application, you are required to have a mobile device or emulator on which to present your hack. We will be providing dongles to connect (certain, late-model) iOS Devices to the projection system. Otherwise you are free to use the Document Camera / your own computer.</p><p>Your team is only allowed to submit one hack during the hacking timeframe. This is so you can concentrate on making the best app possible!</p><p>Hardware-focused hacks are not allowed without the express permission of a TartanHacks Organizer. If you are concerned about including a hardware component in your hack, contact&nbsp;<a href="mailto:tartanhacks@tartanhacks.com" onclick="window.open('https://mail.google.com/mail/?view=cm&amp;tf=1&amp;to=tartanhacks@tartanhacks.com&amp;cc=&amp;bcc=&amp;su=&amp;body=','_blank');return false;">tartanhacks@tartanhacks.com</a>. If you want to participate in a hardware hackathon, we recommend that you look into Carnegie Mellon’s annual “Build18” hardware hackathon.</p><p>You must complete a submission to the Audition submission system, available through TartanHacks' OnStage platform&nbsp;<strong>before</strong>&nbsp;6:00:00PM EST on Saturday, January 26th, 2013.</p><p>Hacks submitted late will not be eligible for prizes.</p><h3>Demo Timing</h3><p>You are required to present a demo of your hack to be eligible for judging. The time limit for each demo is 90 seconds. (However, the TartanHacks Organizers have the right to decrease total time provided to all teams if necessary to make sure demos don’t last all night.)</p><h2>Judging and Awards</h2><p>There are three types of Judges that will be evaluating your hack based on your demo:</p><ul><li>The TartanHacks 2013 Judging Panel</li><li>Sponsor Judges</li><li>The TartanHacks 2013 Organizers</li></ul><p>The TartanHacks 2013 Judging Panel will determine the First, Second, and Third place winners. This will be based off the goal, function of your submission, ease of use, novelty and user experience of your submission.</p><p>Sponsor judges will award one team a prize of their choosing based off a category of their choosing.</p><p>TartanHacks 2012 Organizers will also award one prize, the First Penguin Award. The First Penguin Award is awarded to the team with the most “daring” hack, even if the hack was not entirely successful. Google “first penguin award randy pausch” to find out more.</p><p>You are only allowed to win one prize. </p><h3>Mixed Teams / Graduate Teams</h3><p></p><p>Teams with Graduate students in them would only be eligible for the Best Grad Hack award, which is prize-less.&nbsp;</p><h2>Disqualification</h2><p>If you are caught cheating, attempting to interfere with another team's hack in any way that is not constructive, or is malicious in any way, or begin acting against the spirit of the hackathon you <strong>will</strong> be disqualified from the event, and may not be able to participate in future ScottyLabs events.&nbsp;</p><p></p><h2>Final Calls</h2><p>Should you or your team be caught cheating, acting in a way that is contrary to the spirit of TartanHacks, or violating the Carnegie Mellon University Code of Conduct, you will be disqualified from the event and your submission will not be scored or considered for prizes.</p><p>The TartanHacks 2013 Organizers have final say when it comes to use of 3rd party assistance, location of hacking, submission timing, disqualification, and all other issues or questionable situations that may arise.</p><h2>Contact</h2><p>Please feel free to contact the TartanHacks Organizers at&nbsp;<a href="mailto:tartanhacks@tartanhacks.com" onclick="window.open('https://mail.google.com/mail/?view=cm&amp;tf=1&amp;to=tartanhacks@tartanhacks.com&amp;cc=&amp;bcc=&amp;su=&amp;body=','_blank');return false;">tartanhacks@tartanhacks.com</a>.</p><p></p></div></div></div></div><div class="row sqs-row"><div class="col sqs-col-12 span-12"><div class="sqs-block image-block" data-block-json="&#123;&quot;layout&quot;:&quot;caption-below&quot;,&quot;description&quot;:&#123;&quot;source&quot;:&quot;&quot;,&quot;engine&quot;:&quot;wysiwyg&quot;,&quot;html&quot;:&quot;&quot;&#125;,&quot;imageId&quot;:&quot;50eb5cb9e4b0a5b2685d2912&quot;,&quot;filename&quot;:&quot;6916899715_f2142bc088_b.jpg&quot;,&quot;lightbox&quot;:false,&quot;stretch&quot;:false,&quot;linkTo&quot;:&quot;&quot;,&quot;newwindow&quot;:false&#125;" data-block-type="5" id="block-62e00a527e6fe527678c"><div class="sqs-block-content"><div class="image-block-outer-wrapper layout-caption-below"><div class="intrinsic" style="max-width:1024.0px"><div class="image-block-wrapper" style="padding-bottom:57.714844%;"><img  data-image-focal-point="0.5,0.5" data-image-dimensions="1024x591" data-image="http://static.squarespace.com/static/4f3d3c4e2933f97e8f61d857/t/50eb5cb9e4b0a5b2685d2912/1357601978856/6916899715_f2142bc088_b.jpg" data-src="http://static.squarespace.com/static/4f3d3c4e2933f97e8f61d857/t/50eb5cb9e4b0a5b2685d2912/1357601978856/6916899715_f2142bc088_b.jpg" /></div></div></div></div></div></div></div></div>
+  </section>
+</div>
+
+    <div class="page-divider"></div>
+
+    <footer id="footer">
+      <div class="sqs-layout sqs-grid-12 columns-12" data-type="block-field" id="footerBlock"><div class="row sqs-row"><div class="col sqs-col-12 span-12"></div></div></div>
+                      <div id="footerBlocks-2" class="social-links">
+          <a href="https://twitter.com/ScottyLabs" target="_blank" class="social-twitter"></a><a href="https://twitter.com/TartanHacks" target="_blank" class="social-twitter"></a>        </div>
+                  </footer>
+        
+  </div>
+  
+  
+  
+</body>
+
+</html>

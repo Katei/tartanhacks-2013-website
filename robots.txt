@@ -1,0 +1,5 @@
+# Squarespace Robots Txt
+
+Sitemap: http://tartanhacks.com/sitemap.xml
+User-agent: *
+Disallow: /config
